@@ -28,5 +28,15 @@ TEST_CASE("goodVibes"){
 	CHECK(betterZ==goodVibes(z));
 }
 
+TEST_CASE("gogeta"){   
+	std::vector<int> v1{1,2,3};
+	std::vector<int> v2{4,5};
+	std::vector<int> v1After{1,2,3,4,5};
+	
+	gogeta(v1,v2);
+	CHECK(v1==v1After);
+	CHECK(v2.empty());
+}
+
 
 

@@ -19,3 +19,11 @@ std::vector<int> goodVibes(const std::vector<int>& v){
 	}
 	return betterVect;
 }
+
+void gogeta(std::vector<int> &goku, std::vector<int> &vegeta){
+	for(int x=0;x<vegeta.size();x++){
+		goku.push_back(vegeta.at(x));
+	}
+	vegeta.clear();
+	
+}

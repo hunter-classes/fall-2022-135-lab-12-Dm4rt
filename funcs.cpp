@@ -9,3 +9,13 @@ std::vector<int> makeVector(int n){
 	}
 	return vect;
 }
+
+std::vector<int> goodVibes(const std::vector<int>& v){
+	std::vector<int> betterVect;
+	for(int x=0;x<v.size();x++){
+		if(v.at(x)>0){
+			betterVect.push_back(v.at(x));
+		}
+	}
+	return betterVect;
+}

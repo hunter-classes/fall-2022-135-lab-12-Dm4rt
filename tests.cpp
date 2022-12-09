@@ -18,5 +18,15 @@ TEST_CASE("makeVector"){
 	}
 }
 
+TEST_CASE("goodVibes"){   
+	std::vector<int> v{1,2,-1,3,4,-1,6};
+	std::vector<int> betterV{1,2,3,4,6};
+	CHECK(betterV==goodVibes(v));
+	
+	std::vector<int> z{1,2,-1,3,-5,0,4,-1,6,-12,11};
+	std::vector<int> betterZ{1,2,3,4,6,11};
+	CHECK(betterZ==goodVibes(z));
+}
+
 
 
